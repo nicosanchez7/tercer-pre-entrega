@@ -1,0 +1,182 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// imports
+@import "utilidades/variables";
+
+/* estilos generales */
+body{
+    font-family: 'Source Serif Pro', serif;
+    header{
+        display: grid;
+        grid-area: header;
+        background-color: $color-header;
+        nav{
+            div{
+                a{
+                    .navbar-brand{
+                        font-size: small;
+                    }
+                }
+                div{
+                    .otros-html{
+                        font-size: larger;
+                        color: rgb(12, 12, 12);
+                        font-family: 'Source Serif Pro', serif;
+                    }
+                    ul{
+                        li:hover{
+                            transform: scale(0.9);
+                            text-shadow: 1px 1px 1px black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        display: grid;
+        grid-area: main;
+        background-color: $color-main;
+    }
+    footer{
+        background-color: $color-footer;
+        display: grid;
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        h2{
+            .derechos{
+                font-size: medium;
+            }
+        }
+        div{
+            .redes{
+                display: flex;
+                justify-content: space-between;
+                gap: 100px;
+                margin: 50px;
+            }
+        }
+    }
+
+/* estilos del index */
+
+body{
+    div{
+        .body-home{
+            display: grid;
+            height: 100vh;
+            grid-template-areas: 
+                "header"
+                "main"
+                "footer";       
+            main{
+                .main-index{
+                    display: flex;
+                    justify-content: center;
+                    filter: drop-shadow(2px 2px 4px black);
+                }
+            }    
+        }     
+    }
+}
+
+/* estilos de watercolor */
+
+main{
+    h2{
+        .watercolor-main-title{
+            font-size: xx-large;
+            text-align: center;
+        }
+    }
+}
+
+/* estilos de principal style */
+
+main{
+    h2{
+        .principal-style-main-title{
+            font-size: xx-large;
+            text-align: center;
+        }
+    }
+}
+
+/* estilos de about me */
+main{
+    .main-about-me{
+        padding-bottom: 35px;
+        text-align: center;
+        h2{
+            .title-about-me{
+                padding-top: 35px;
+                padding-bottom: 35px;
+                font-size: xx-large;
+            }
+        }
+        img{
+            .dibujo-conejo{
+                padding-bottom: 35px;
+            }
+        }
+    }
+}
+
+/* estilos de contact */
+body{
+    div{
+        .body-contact{
+            display: grid;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "main section"
+                "footer footer";
+        }
+    }
+}
+
+section{
+    .container-1{
+        display: grid;
+        grid-area: section;
+        h2{
+            font-size: large;
+        }
+    }
+}
+
+main{
+    div{
+        .parrafo{
+            text-align: center;
+            font-size: large;
+        }
+    }
+    form{
+        .formulario{
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+    }
+}
+
+/* MQ */
+@media screen and (max-width:768px){
+    .container-1{
+        display: none;
+    }
+}
+
+
